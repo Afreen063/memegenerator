@@ -12,10 +12,11 @@ export default function Header()
     }
     return (
         <header className="header">
-            <img src="https://ih1.redbubble.net/image.493812748.1150/flat,1000x1000,075,f.u1.jpg" onMouseOver={handleMouseover} className="logo"/>
-            <h2>MemeGenerator</h2>
-            <h4>React-Project 3</h4>
-            <button onClick={handleClick}>click me</button>
+            <img src="http://www.pngall.com/wp-content/uploads/5/Meme-Troll.png" onMouseOver={handleMouseover} className="header--image"/>
+           
+                <h2 className="header--title">MemeGenerator</h2>
+            <h4 className="header--project">React-Project 3</h4>
+         
         </header>
     )
 }

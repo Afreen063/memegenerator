@@ -1,4 +1,40 @@
-.logo{
-  width: 100px;
-  height: 100px;
+body{
+  margin: 0;
+}
+.header{
+  height: 65px;
+  background: linear-gradient(90deg,#672280 1.18%, #A62603 100%);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+.header--image{
+  height: 100%;
+  margin-right: 9px;
+}
+.header-title{
+  font-size: 20px;
+  margin: auto;
+}
+.header--project{
+  font-size: 12px;
+  margin-left: auto;
+}
+.main{
+  padding: 36px;
+}
+.form{
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+.form--input{
+  font-family: "karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.form--button{
+  grid-column: 1 / -1;
 }
