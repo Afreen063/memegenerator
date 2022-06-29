@@ -10,7 +10,7 @@ function App() {
    <div>
          <Header />
          <Meme />
-        <Greet name="afreen" />
+        <Greet />
    </div>
     
   )
