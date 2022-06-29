@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Greet()
 {
-    let c=0;
-   const [count, setCount]= React.useState(c);
+
+   const [count, setCount]= React.useState(0);
    function decClick()
    {
              setCount((oldValue)=>{

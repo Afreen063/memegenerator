@@ -2,7 +2,7 @@
 import './App.css';
 import Header from './components/Header';
 import Meme from './components/Meme';
-import Greet from './components/Greet';
+import Generate from './components/Generate';
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
    <div>
          <Header />
          <Meme />
-        <Greet />
+         <Generate />
    </div>
     
   )
