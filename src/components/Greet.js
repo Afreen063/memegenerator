@@ -10,6 +10,7 @@ export default function Greet()
                 return oldValue-1;
              });//we dont use c++ or count-- , when we use useState we dont change the state of count;
    }// we can also pass a function in setCount funct 
+   //best way to pass funct in setCount... need some research
    function incClick()
    {
              setCount(count+1);

@@ -39,3 +39,7 @@ body{
   grid-column: 1 / -1;
   background: linear-gradient(90deg,#672280 1.18%, #A62603 100%);
 }
+.meme--image{
+  width: 200%;
+  height: 50%;
+}
