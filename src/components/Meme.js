@@ -11,6 +11,7 @@ import memeData from "./memeData";
         const url= memeArray[randomMeme].url;
       console.log(url);
       setMemeImage(url);
+      console.log(memeArray[randomMeme]["box-count"]);
     }
     
     
