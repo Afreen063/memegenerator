@@ -7,9 +7,9 @@ import memeData from "./memeData";
     {
         const memeArray = memeData.data.memes;
         const randomMeme = Math.floor(Math.random()*memeArray.length);
-        //console.log(randomMeme);
+        console.log(randomMeme);
         const url= memeArray[randomMeme].url;
-      // console.log(url);
+      console.log(url);
       setMemeImage(url);
     }
     
