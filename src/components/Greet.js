@@ -13,7 +13,9 @@ export default function Greet()
    //best way to pass funct in setCount... need some research
    function incClick()
    {
-             setCount(count+1);
+             setCount((pervousNumber)=>{
+                 return pervousNumber+1;
+             });
    }
 
    return (
