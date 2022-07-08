@@ -1,32 +1,31 @@
-
-import './App.css';
-import Header from './components/Header';
-import Meme from './components/Meme';
-import Generate from './components/Generate';
-import { BrowserRouter , Routes , Route } from 'react-router-dom';
-import Home from './components/Home';
-import Product from './components/Product';
-import SignIn from './components/Signin';
-import NavBar from './components/NaviBar'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Banner from "./components/Banner";
+import ProductList from "./components/ProductList";
+import CheckoutAd from "./components/CheckoutAd";
+import ShoppingBasket from "./components/ShoppingBasket";
+import React from "react";
 
 function App() {
   return (
-   <div>
-    <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/product" element={<Product />} />
-          
-          <Route path="/signin" element={<SignIn />} />
-        </Routes>
-      </BrowserRouter>
-         <Header />
-         <Generate />
-        
-   </div>
-    
-  )
+    <Router>
+      <Header/>
+      <Routes>
+        <Route exact path='/' element={
+          <React.Fragment>
+            <Banner/>
+            <ProductList/>
+          </React.Fragment>
+        }/>
+        <Route exact path='/checkout' element={
+          <React.Fragment>
+            <CheckoutAd/>
+            <ShoppingBasket/>
+          </React.Fragment>
+        } />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
